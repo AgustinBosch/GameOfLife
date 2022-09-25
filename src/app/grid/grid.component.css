@@ -1,0 +1,11 @@
+rect {
+	stroke: #000;
+	stroke-width: 0.1px;
+}
+
+.live {
+	fill: black;
+}
+.dead {
+	fill: white;
+}

@@ -1,0 +1,15 @@
+<div class="box">
+	<div class="content">
+		<span>Options</span>
+		<button (click)="startStop()" [class]="!state ? 'green' : 'red'">
+			{{ state ? "Stop" : "Start" }}
+		</button>
+		<div class="speed">
+			<button (click)="minus(100)">--</button>
+			<button (click)="minus(10)">-</button>
+			<span>{{ speed }}ms</span>
+			<button (click)="plus(10)">+</button>
+			<button (click)="plus(100)">++</button>
+		</div>
+	</div>
+</div>

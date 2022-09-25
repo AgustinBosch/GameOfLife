@@ -1,0 +1,31 @@
+.box {
+	border: 1px solid black;
+	border-radius: 3px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 1;
+	background-color: rgb(169, 169, 169);
+}
+span {
+	margin: 0 3px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+.content > * {
+	margin-bottom: 5px;
+}
+
+.speed {
+	display: flex;
+}
+
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}

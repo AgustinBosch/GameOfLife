@@ -1,0 +1,19 @@
+<app-options
+	(toggleEvent)="toggle()"
+	(minusEvent)="minus($event)"
+	(plusEvent)="plus($event)"
+	#options
+></app-options>
+<svg [attr.width]="width" [attr.height]="height">
+	<ng-container *ngFor="let row of grid.nodes">
+		<rect
+			*ngFor="let node of row"
+			[attr.x]="node.x * nodeSize"
+			[attr.y]="node.y * nodeSize"
+			[attr.width]="nodeSize"
+			[attr.height]="nodeSize"
+			[class]="node.isLive ? 'live' : 'dead'"
+			(click)="toggleNode(node)"
+		/>
+	</ng-container>
+</svg>
